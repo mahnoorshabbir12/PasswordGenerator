@@ -12,7 +12,6 @@ function App() {
   const passRef = useRef("null");
   const copy = useCallback(() => {
     passRef.current?.select();
-    // passRef.current.setSelectionRange(0,3);
     window.navigator.clipboard.writeText(password);
   },[password])
   const passwordGenerator = useCallback(() => {
@@ -51,29 +50,4 @@ function App() {
 
 export default App
 
-  // const [length, setLength] = useState(5)
-  // const [number, setNumber] = useState(false)
-  // const [char, setCharacter] = useState(false)
-  // const [password, setPassword] = useState("")
-  // const passwordGenerator = useCallback(() =>{
-  //   let pass ="";
-  //   let string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  //   let num = "0123456789";
-  //   let specialCharacter = "!@#$%^&*()+{}|?<>~";
-  //   if(number){
-  //     string += num;
-  //   }
-  //   if(char){
-  //     string += specialCharacter;
-  //   }
-  //   for(let i=0; i< length; i++){
-  //     let result = Math.floor(Math.random()*string.length);
-  //     pass += string.charAt(result);
-  //   }
-  //   setPassword(pass);
-  //   console.log("Generated password:", pass);
-  // },[length,number,char])
-
-  // useEffect(() =>{
-  //   passwordGenerator()
-  // }, [length,number,char])
+ 
