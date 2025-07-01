@@ -1,45 +1,12 @@
-# 🔐 React Password Generator
+# React + Vite
 
-This is a simple **Password Generator** app built with **React**. It allows users to generate strong, customizable passwords with options for length, numbers, and special characters. The app also includes a feature to copy the password directly to the clipboard.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Features
+Currently, two official plugins are available:
 
-- ✅ Generate secure random passwords
-- 🔢 Toggle inclusion of numbers
-- 🔣 Toggle inclusion of special characters
-- 📏 Adjustable password length (3 to 20)
-- 📋 One-click copy to clipboard
-- 🎨 Tailwind CSS-styled UI
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🌐 Live Demo
+## Expanding the ESLint configuration
 
-👉 [Try the App Here](https://mahnoorshabbir12.github.io/PasswordGenerator/)
-
-## 🛠 Tech Stack
-
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-## 📁 File Structure
-
-
-## 💻 How It Works
-
-- Uses `useState` to manage:
-  - Password length
-  - Inclusion of numbers and characters
-  - Generated password
-- Uses `useEffect` to automatically generate a password when inputs change
-- Uses `useRef` to select the password field for clipboard copy
-- Password is generated from:
-  - Base alphabet: A-Z, a-z
-  - Optional digits: 0-9
-  - Optional special characters: `!@#$%^&*()+{}|?<>~`
-
-## 📦 Getting Started
-
-### 1. Install dependencies
-
-```bash
-npm install
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
