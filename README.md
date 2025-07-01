@@ -1,12 +1,49 @@
-# React + Vite
+# 🔐 React Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Password Generator** app built with **React** and **Vite**. It allows users to generate strong, customizable passwords with options for length, numbers, and special characters. It also includes a one-click feature to copy the password to your clipboard.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Generate secure random passwords
+- 🔢 Option to include numbers
+- 🔣 Option to include special characters
+- 📏 Adjustable password length (3 to 20)
+- 📋 One-click copy to clipboard
+- 🎨 Tailwind CSS-styled UI
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [https://password-generator-yd4m.vercel.app/](https://password-generator-yd4m.vercel.app/)
+
+## 🛠 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## 📁 File Structure
+
+├── public/
+├── src/
+│ ├── App.jsx # Core password generator logic
+│ ├── App.css # Custom styles
+│ └── main.jsx # App entry point
+├── index.html
+├── vite.config.js
+├── package.json
+└── README.md
+
+## 💻 How It Works
+
+- Uses React `useState` to manage options like length, numbers, and special characters
+- Uses `useEffect` to regenerate password on changes
+- Uses `useRef` to copy password to clipboard
+- Generates random passwords based on the user's selected criteria
+
+## 📦 Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+
